@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {
   ArrowRight,
@@ -46,25 +46,25 @@ const heroStats: Array<{ icon: IconType; lead: string; value: string; label: str
 ];
 
 const categories = [
-  { title: 'Электроника и гаджеты', count: '1520 товаров', image: 'category-electronics.png', featured: true },
-  { title: 'Товары для дома и уюта', count: '2300 товаров', image: 'category-home.png' },
-  { title: 'Автотовары и запчасти', count: '980 товаров', image: 'category-auto.png' },
-  { title: 'Строительство и ремонт', count: '1850 товаров', image: 'category-build.png' },
-  { title: 'Одежда и обувь оптом', count: '3100 товаров', image: 'category-clothes.png' },
-  { title: 'Хозтовары и упаковка', count: '1250 товаров', image: 'category-packaging.png' },
-  { title: 'Продукты питания и напитки', count: '870 товаров', image: 'category-food.png' },
+  { title: 'Электроника и гаджеты', count: '1520 товаров', image: 'category-electronics.webp', featured: true },
+  { title: 'Товары для дома и уюта', count: '2300 товаров', image: 'category-home.webp' },
+  { title: 'Автотовары и запчасти', count: '980 товаров', image: 'category-auto.webp' },
+  { title: 'Строительство и ремонт', count: '1850 товаров', image: 'category-build.webp' },
+  { title: 'Одежда и обувь оптом', count: '3100 товаров', image: 'category-clothes.webp' },
+  { title: 'Хозтовары и упаковка', count: '1250 товаров', image: 'category-packaging.webp' },
+  { title: 'Продукты питания и напитки', count: '870 товаров', image: 'category-food.webp' },
 ];
 
 const catalogItems = [
   ...categories,
-  { title: 'Канцтовары и офис', count: '740 товаров', image: 'product-lamp.png' },
-  { title: 'Товары для кухни', count: '1180 товаров', image: 'product-kettle.png' },
-  { title: 'Красота и уход', count: '960 товаров', image: 'product-thermos.png' },
-  { title: 'Детские товары', count: '690 товаров', image: 'category-home.png' },
-  { title: 'Спорт и туризм', count: '820 товаров', image: 'product-backpack.png' },
-  { title: 'Сад и дача', count: '1020 товаров', image: 'category-build.png' },
-  { title: 'Зоотовары', count: '530 товаров', image: 'category-packaging.png' },
-  { title: 'Бытовая химия', count: '870 товаров', image: 'category-food.png' },
+  { title: 'Канцтовары и офис', count: '740 товаров', image: 'product-lamp.webp' },
+  { title: 'Товары для кухни', count: '1180 товаров', image: 'product-kettle.webp' },
+  { title: 'Красота и уход', count: '960 товаров', image: 'product-thermos.webp' },
+  { title: 'Детские товары', count: '690 товаров', image: 'category-home.webp' },
+  { title: 'Спорт и туризм', count: '820 товаров', image: 'product-backpack.webp' },
+  { title: 'Сад и дача', count: '1020 товаров', image: 'category-build.webp' },
+  { title: 'Зоотовары', count: '530 товаров', image: 'category-packaging.webp' },
+  { title: 'Бытовая химия', count: '870 товаров', image: 'category-food.webp' },
 ];
 
 const smallAdvantages: Array<{ icon: IconType; title: string; text: string }> = [
@@ -109,16 +109,16 @@ const benefits: Array<{ icon: IconType; title: string; text: string }> = [
 ];
 
 const products = [
-  { tag: 'Хит', article: '10234', title: 'Внешний аккумулятор Xiaomi Mi Power Bank 20000 мАч', min: 'от 10 шт', price: 'от 890 ₽', unit: 'от 89 ₽/шт', image: 'product-powerbank.png' },
-  { tag: 'Хит', article: '24589', title: 'Беспроводные наушники Xiaomi Redmi AirDots 2', min: 'от 20 шт', price: 'от 1 250 ₽', unit: 'от 62,50 ₽/шт', image: 'product-earbuds.png' },
-  { tag: 'Хит', article: '35471', title: 'Умные часы Smart Watch X8', min: 'от 10 шт', price: 'от 1 750 ₽', unit: 'от 175 ₽/шт', image: 'product-watch.png' },
-  { tag: 'Хит', article: '87621', title: 'Электрический чайник Xiaomi Mi Electric Kettle', min: 'от 10 шт', price: 'от 1 390 ₽', unit: 'от 139 ₽/шт', image: 'product-kettle.png' },
-  { article: '98123', title: 'Светодиодный фонарь X-Balog P50', min: 'от 30 шт', price: 'от 320 ₽', unit: 'от 10,67 ₽/шт', image: 'product-flashlight.png' },
-  { article: '11235', title: 'Набор инструментов DEKO DKMT108, 108 предметов', min: 'от 5 шт', price: 'от 2 990 ₽', unit: 'от 598 ₽/шт', image: 'product-tools.png' },
-  { article: '34567', title: 'Термос Stanley Classic 1.0 л, зелёный', min: 'от 10 шт', price: 'от 1 890 ₽', unit: 'от 189 ₽/шт', image: 'product-thermos.png' },
-  { article: '56789', title: 'Рюкзак городской Tigernu T-B3998', min: 'от 10 шт', price: 'от 2 450 ₽', unit: 'от 245 ₽/шт', image: 'product-backpack.png' },
-  { article: '67890', title: 'Настольная LED лампа Xiaomi Mi Desk Lamp 1S', min: 'от 10 шт', price: 'от 2 150 ₽', unit: 'от 215 ₽/шт', image: 'product-lamp.png' },
-  { article: '78901', title: 'Контейнер для хранения BranQ Optima, 10 л', min: 'от 20 шт', price: 'от 230 ₽', unit: 'от 11,50 ₽/шт', image: 'product-container.png' },
+  { tag: 'Хит', article: '10234', title: 'Внешний аккумулятор Xiaomi Mi Power Bank 20000 мАч', min: 'от 10 шт', price: 'от 890 ₽', unit: 'от 89 ₽/шт', image: 'product-powerbank.webp' },
+  { tag: 'Хит', article: '24589', title: 'Беспроводные наушники Xiaomi Redmi AirDots 2', min: 'от 20 шт', price: 'от 1 250 ₽', unit: 'от 62,50 ₽/шт', image: 'product-earbuds.webp' },
+  { tag: 'Хит', article: '35471', title: 'Умные часы Smart Watch X8', min: 'от 10 шт', price: 'от 1 750 ₽', unit: 'от 175 ₽/шт', image: 'product-watch.webp' },
+  { tag: 'Хит', article: '87621', title: 'Электрический чайник Xiaomi Mi Electric Kettle', min: 'от 10 шт', price: 'от 1 390 ₽', unit: 'от 139 ₽/шт', image: 'product-kettle.webp' },
+  { article: '98123', title: 'Светодиодный фонарь X-Balog P50', min: 'от 30 шт', price: 'от 320 ₽', unit: 'от 10,67 ₽/шт', image: 'product-flashlight.webp' },
+  { article: '11235', title: 'Набор инструментов DEKO DKMT108, 108 предметов', min: 'от 5 шт', price: 'от 2 990 ₽', unit: 'от 598 ₽/шт', image: 'product-tools.webp' },
+  { article: '34567', title: 'Термос Stanley Classic 1.0 л, зелёный', min: 'от 10 шт', price: 'от 1 890 ₽', unit: 'от 189 ₽/шт', image: 'product-thermos.webp' },
+  { article: '56789', title: 'Рюкзак городской Tigernu T-B3998', min: 'от 10 шт', price: 'от 2 450 ₽', unit: 'от 245 ₽/шт', image: 'product-backpack.webp' },
+  { article: '67890', title: 'Настольная LED лампа Xiaomi Mi Desk Lamp 1S', min: 'от 10 шт', price: 'от 2 150 ₽', unit: 'от 215 ₽/шт', image: 'product-lamp.webp' },
+  { article: '78901', title: 'Контейнер для хранения BranQ Optima, 10 л', min: 'от 20 шт', price: 'от 230 ₽', unit: 'от 11,50 ₽/шт', image: 'product-container.webp' },
 ];
 
 const productPerks: Array<{ icon: IconType; title: string; text: string }> = [
@@ -129,11 +129,11 @@ const productPerks: Array<{ icon: IconType; title: string; text: string }> = [
 ];
 
 const orderSteps: Array<{ icon: IconType; number: string; title: string; text: string; image: string }> = [
-  { icon: ShoppingCart, number: '1', title: 'Выберите товары', text: 'Из каталога или через поиск на сайте. Добавьте в список и укажите количество.', image: 'order-airfryer.png' },
-  { icon: FileText, number: '2', title: 'Отправьте запрос или запросите прайс', text: 'Оставьте заявку на сайте или напишите менеджеру. Мы подготовим коммерческое предложение.', image: 'order-offer.png' },
-  { icon: UserRound, number: '3', title: 'Подтвердите заказ', text: 'Согласуем условия, наличие и сроки поставки. Фиксируем заказ в работу.', image: 'order-handshake.png' },
-  { icon: CreditCard, number: '4', title: 'Оплатите удобным способом', text: 'Работаем по безналичному расчёту. Принимаем оплату по счёту с НДС.', image: 'order-payment.png' },
-  { icon: Truck, number: '5', title: 'Быстрая отгрузка и доставка', text: 'Отгружаем со склада в день оплаты. Доставка по РФ и СНГ от 1 дня.', image: 'order-shipping.png' },
+  { icon: ShoppingCart, number: '1', title: 'Выберите товары', text: 'Из каталога или через поиск на сайте. Добавьте в список и укажите количество.', image: 'order-airfryer.webp' },
+  { icon: FileText, number: '2', title: 'Отправьте запрос или запросите прайс', text: 'Оставьте заявку на сайте или напишите менеджеру. Мы подготовим коммерческое предложение.', image: 'order-offer.webp' },
+  { icon: UserRound, number: '3', title: 'Подтвердите заказ', text: 'Согласуем условия, наличие и сроки поставки. Фиксируем заказ в работу.', image: 'order-handshake.webp' },
+  { icon: CreditCard, number: '4', title: 'Оплатите удобным способом', text: 'Работаем по безналичному расчёту. Принимаем оплату по счёту с НДС.', image: 'order-payment.webp' },
+  { icon: Truck, number: '5', title: 'Быстрая отгрузка и доставка', text: 'Отгружаем со склада в день оплаты. Доставка по РФ и СНГ от 1 дня.', image: 'order-shipping.webp' },
 ];
 
 const orderPerks: Array<{ icon: IconType; title: string; text: string }> = [
@@ -180,7 +180,7 @@ function Header() {
       <div className="header-main-shell">
         <div className="header-main container">
           <a className="logo-wrap" href="#" aria-label="OPTOM HUB">
-            <img src={`${A}logo-optom-hub.png`} alt="OPTOM HUB" />
+            <img src={`${A}logo-optom-hub.webp`} alt="OPTOM HUB" decoding="async" />
           </a>
           <div className="mobile-header-actions" aria-label="Быстрые действия">
             <a className="mobile-icon-button" href="#" aria-label="Telegram">
@@ -210,7 +210,7 @@ function Header() {
                 <div className="catalog-list">
                   {catalogItems.map((category) => (
                     <a href="#categories" className="catalog-chip" key={category.title}>
-                      <img src={`${A}${category.image}`} alt="" />
+                      <img src={`${A}${category.image}`} alt="" loading="lazy" decoding="async" />
                       <span>
                         <strong>{category.title}</strong>
                         <em>{category.count}</em>
@@ -273,8 +273,8 @@ function Hero() {
         <div className="hero-media">
           <div className="hero-image-frame">
             <picture>
-              <source media="(max-width: 760px)" srcSet={`${A}hero-mobile.png`} />
-              <img src={`${A}hero-truck.png`} alt="Фура у склада с коробками" />
+              <source media="(max-width: 760px)" srcSet={`${A}hero-mobile.webp`} />
+              <img src={`${A}hero-truck.webp`} alt="Фура у склада с коробками" fetchPriority="high" decoding="async" />
             </picture>
             <div className="sticker neon">ОПТ<br />ЛЕГКО</div>
             <div className="sticker dark">Работаем<br />на результат<br />вашего бизнеса</div>
@@ -319,7 +319,7 @@ function CategoryGrid() {
               <span>{category.count}</span>
               <button type="button" aria-label={`Открыть ${category.title}`}><ArrowRight size={18} /></button>
             </div>
-            <img src={`${A}${category.image}`} alt={category.title} />
+            <img src={`${A}${category.image}`} alt={category.title} loading="lazy" decoding="async" />
           </article>
         ))}
       </div>
@@ -358,7 +358,7 @@ function BenefitsSection() {
           <p>Мы создаём удобные условия для оптовых покупателей и помогаем развивать ваш бизнес</p>
         </div>
         <div className="pallet-card">
-          <img src={`${A}hero-truck.png`} alt="Оптовая поставка" />
+          <img src={`${A}hero-truck.webp`} alt="Оптовая поставка" loading="lazy" decoding="async" />
           <Zap className="big-zap" size={170} />
         </div>
       </div>
@@ -399,7 +399,7 @@ function ProductHits() {
             <div className="product-image">
               {product.tag && <span className="hit-tag">{product.tag}</span>}
               <button type="button" aria-label="В избранное"><Heart size={20} /></button>
-              <img src={`${A}${product.image}`} alt={product.title} />
+              <img src={`${A}${product.image}`} alt={product.title} loading="lazy" decoding="async" />
             </div>
             <div className="product-info">
               <span>Арт. {product.article}</span>
@@ -447,7 +447,7 @@ function OrderSection() {
               <step.icon size={42} />
               <h3>{step.title}</h3>
               <p>{step.text}</p>
-              <img src={`${A}${step.image}`} alt={step.title} />
+              <img src={`${A}${step.image}`} alt={step.title} loading="lazy" decoding="async" />
               {index < orderSteps.length - 1 && <ChevronRight className="step-arrow" size={32} />}
             </article>
           ))}
@@ -530,7 +530,7 @@ function FaqContact() {
             <p>Наши специалисты помогут подобрать товары и ответят на все вопросы</p>
             <ArrowButton>Связаться с поддержкой</ArrowButton>
           </div>
-          <img src={`${A}support-manager.png`} alt="Менеджер поддержки" />
+          <img src={`${A}support-manager.webp`} alt="Менеджер поддержки" loading="lazy" decoding="async" />
         </article>
         <article className="contacts-card">
           <div>
@@ -539,7 +539,7 @@ function FaqContact() {
             <p><Mail size={22} /><span><strong>info@optomhub.ru</strong>Ответим в течение 15 минут</span></p>
             <p><MapPin size={22} /><span><strong>Москва, ул. Промышленная, 11, стр. 3</strong>Офис и склад</span></p>
           </div>
-          <img src={`${A}delivery-truck.png`} alt="Доставка OPTOM HUB" />
+          <img src={`${A}delivery-truck.webp`} alt="Доставка OPTOM HUB" loading="lazy" decoding="async" />
         </article>
       </div>
     </section>
@@ -567,7 +567,7 @@ function SubscribeFooter() {
       <footer className="site-footer">
         <div className="container footer-main">
           <div className="footer-brand">
-            <img src={`${A}logo-optom-hub.png`} alt="OPTOM HUB" />
+            <img src={`${A}logo-optom-hub.webp`} alt="OPTOM HUB" loading="lazy" decoding="async" />
             <p>Надёжный поставщик товаров для бизнеса по выгодным оптовым ценам с быстрой доставкой по России и СНГ.</p>
             <div className="socials">
               <a href="#" aria-label="Telegram"><img src={`${A}social-telegram.svg`} alt="" /></a>
