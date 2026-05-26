@@ -1,0 +1,14 @@
+node_modules/
+dist/
+_screenshots/
+
+*.tsbuildinfo
+*.log
+vite.config.js
+vite.config.d.ts
+
+.env
+.env.*
+
+ChatGPT Image *.png
+Frame 1*.png
